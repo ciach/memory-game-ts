@@ -13,6 +13,8 @@ import GlobalStyles from './App.styles';
 
 const App = () => {
   const [cards, setCards] = React.useState<CardType[]>(shuffleArray(createBoard()));
+  
+  // @ts-ignore: Unused for now, will be used in upcoming features
   const [gameWon, setGameWon] = React.useState(false);
   const [matchedPairs, setMatchedPairs] = React.useState(0);
   const [clickedCard, setClickedCard] = React.useState<undefined | CardType>(undefined);
